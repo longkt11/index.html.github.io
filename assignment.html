@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>assignment</title>
+</head>
+<link rel="stylesheet" href="css.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<body>
+	<div id="all">
+		<div id="logo">
+			<img src="image/download.png" height="100%" width="20%">
+		</div>
+		<nav>
+			<ul>
+			<li><a href="assignment.html">Trang Chủ</a></li>
+				<li><a href="giaynam.html">Giày Nam</a></li>
+				<li><a href="">Giày Nữ</a></li>
+				<li><a href="Chitiet.html">Khuyến Mãi</a></li>
+				<li><a href="">Liên Hệ</a></li>
+				<li><a href="giohang.html">Giỏ Hàng</a></li>
+			</ul>
+		</nav>
+		  <div id="slider">
+			  <ul>
+			  <li><img src="image/12.jpg" width="100%" height="100%"></li>
+				  <li><img src="image/Banner_Store1.jpg"></li>
+				  <li><img src="image/converse-web-banner.jpg"></li>
+			  </ul>
+				<a href="#" class="pre"></a>
+	       <a href="#" class="next"></a>
+		  </div>
+		
+		
+		<script type="text/javascript">
+		$(document).ready(function(){
+		function next(){
+			$("#slider ul").animate({"margin-left":"-=1200px"}, 500, function(){
+				$("#slider ul li:first").appendTo($("#slider ul"));
+				$("#slider ul").css({"margin-left":"-1200px"});
+			})
+		}
+		function pre(){
+			$("#slider ul").animate({"margin-left":"+=1200px"}, 500, function(){
+				$("#slider ul li:last").prependTo($("#slider ul"));
+				$("#slider ul").css({"margin-left":"-1200px"});
+			})
+		}
+
+		$(".next").click(function(){next();});
+		$(".pre").click(function(){pre();});
+		var t = null;
+		function play(){
+			t = setInterval(function(){next();}, 2000);
+		}
+		function stop(){
+			clearInterval(t);
+		}
+		play();
+		$("#slider").on("mouseenter", function(){stop();}).on("mouseleave", function(){play()});;
+		//
+		$("#slider ul li img").click(function(){
+			$(".box-model").slideDown(1000);
+			$(".img-model img").attr("src", $(this).attr("src"));	
+		});
+		
+		$(".box-model span").click(function(){
+			$(".box-model").slideUp();	
+		});
+	});
+		</script>
+	
+		
+		<section>
+		<div id="nam">
+			<img src="image/anh2.jpg" class="image" width="99%" height="100%">
+			<div id="middle">
+			<div id="text"><a href="">Giày Nam</a></div>
+			</div>
+			</div>
+			
+			
+			<div id="nu">
+			<img src="image/anh1.jpg" class="image" width="100%" height="100%">
+				<div id="middle1">
+				<div id="text1"><a href="">Giày Nữ</a></div>
+				</div>
+			</div>
+		
+		
+		</section>
+	  <aside><br>
+		<h2>Sản Phẩm Khuyến Mại</h2>
+			<div id="box1">
+			<img src="image/h.jpg" width="100%" height="70%"><br>
+				<div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div>
+				<p>Giá bán: 200.000đ</p><br>
+				<p id="ee">Giá cũ: 300.000đ</p>
+			</div>
+			<div id="box2">
+			<img src="image/g.jpg" width="100%" height="70%"><br>
+				<div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div>
+				<p>Giá bán: 200.000đ</p><br>
+				<p id="ee">Giá cũ: 300.000đ</p>
+			</div>
+			<div id="box2">
+			<img src="image/e.jpg" width="100%" height="70%"><br>
+				<div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div>
+				<p>Giá bán: 200.000đ</p><br>
+				<p id="ee">Giá cũ: 300.000đ</p>
+			</div>
+			<div id="box2">
+			<img src="image/i.jpg" width="100%" height="70%"><br>
+				<div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div>
+				<p>Giá bán: 200.000đ</p><br>
+				<p id="ee">Giá cũ: 300.000đ</p>
+			</div>
+					<hr><br>
+				<h2>Giày Nam</h2>
+		 <div id="box1">
+					<img src="image/h.jpg" width="100%" height="70%"><br>
+			 <div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div><br>
+				 <p>Giá bán: 300.000đ</p>
+					</div>
+		 <div id="box2">
+					<img src="image/m.jpg" width="100%" height="70%"><br>
+				 <div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div><br>
+					 <p>Giá bán: 300.000đ</p>
+				 </div>
+		 <div id="box2">
+			        <img src="image/f.jpg" width="100%" height="70%"><br>
+			 <div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div><br>
+				 <p>Giá bán: 300.000đ</p>
+					</div>
+		 <div id="box2">
+					<img src="image/e.jpg" width="100%" height="70%"><br>
+			 <div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div><br>
+				 <p>Giá bán: 300.000đ</p>
+					</div><br>
+		<h2>Giày nữ</h2>
+		  <div id="box1">
+					<img src="image/i.jpg" width="100%" height="70%"><br>
+			  <div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div><br>
+				  <p>Giá bán: 300.000đ</p>
+					</div>
+		  <div id="main2">
+					<img src="image/k.jpg" width="100%" height="70%"><br>
+			  <div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div><br>
+				  <p>Giá bán: 300.000đ</p>
+					</div>
+		  <div id="main2">
+					<img src="image/o.jpg" width="100%" height="70%"><br>
+			  <div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div><br>
+				  <p>Giá bán: 300.000đ</p>
+					</div>
+		  <div id="main2">
+					<img src="image/n.jpg" width="100%" height="70%"><br>
+			  <div id="title"><a href="a"><a href="">Giày Sneaker Converse Chuck Taylor All Star<a><br></a></div><br>
+				  <p>Giá bán: 300.000đ</p>
+					</div>
+	  </aside>
+		<footer>
+			  <div id="anh">
+			<img src="image/Capture.PNG" width="100%">
+			</div>
+		  <div id="footer1">
+			<div id="class1">
+				<h2>Gọi Mua Hàng</h2>
+				<h1>1800 1162</h1>
+				<p>Tất cả các ngày trong tuần</p>	
+				</div>
+			<div id="class1">
+				<h2>Góp Ý, Khiếu Nại</h2>
+					<h1>1800 1160</h1>
+					<p>Tất cả các ngày trong tuần, trừ ngày lễ</p>
+				</div>
+				<div id="class3">
+				  <h2 id="chu">Đăng Ký Nhận Thông Tin</h2>
+<input id="form" type="email" value="Nhập email của bạn tại đây">
+					<button onClick="">Đăng Ký</button>
+			  </div>
+			  <div id="class1">
+				<h2>Qua Mạng Xã Hội</h2><br>
+					<img src="image/Capture1.PNG">
+					</div>
+		  </div>
+			  </footer>
+	</div>
+</body>
+</html>

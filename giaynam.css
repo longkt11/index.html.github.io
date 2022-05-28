@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0px; padding: 0px; box-sizing: border-box}
+#all{width: 1200px; margin: auto;}
+#logo{height: 100px; background: black; text-align: center; }
+nav{height: 60px; background: rgba(80,80,80,1);}
+nav ul{list-style-type: none; text-align: center;}
+nav li{display: inline-block; width: 100px; line-height: 60px}
+nav a{text-decoration: none; font-size: 19px; color: #fff; display: block;}
+nav a:hover{background: #f1f1f1; color: #333;}
+
+#sli{
+    width: 1200px;
+    background: #eeeeee;
+    height: 680px;
+    margin: auto;
+}
+.slide1{
+	background: none;
+    width: 570px;
+    height: 650px;
+    margin: auto;
+    float: left;
+    margin-left: 30px;
+    padding-top: 30px;
+}
+.left{top: 700px;
+    position: absolute;
+    font-size: 15px; height: 30px;
+}
+.right{top: 700px;
+    position: absolute;
+    font-size: 15px;
+	left: 655px; height: 30px; margin-left: 32px }
+
+#slide2{
+    width: 570px;
+    height: 600px;
+    margin: 35px auto;
+    overflow: hidden;
+    float: left;
+}
+
+.slider{
+    width: 600px;
+    height: 600px;
+    margin: 27px auto;
+    overflow: hidden;
+    float: left;
+}
+.slider .ul{
+    list-style: none;
+}
+.slider .slide{
+    width: 100%;
+    display: none;
+}
+.slider .slide img{
+    width: 100%;
+}
+#title{
+    bottom: 0;
+    padding: 2px;
+    width: 100px auto;
+    text-align: center;
+}
+@keyframes animate{
+    from { transform: scale(1.0) rotate(30deg);}
+    to { transform: scale(1.1) rotate(0deg); }
+}
+.animation{
+    animation: animate 2s;
+}
+#add{
+    width: 1280px;
+    height: 375px;
+    margin: auto;
+    background: #aaaaaa;
+}
+#xem{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+#xem:hover {
+    color: #3300FF;
+}
+#xem a:hover {
+	color:red;}
+
+	
+footer{height: 141px; background: #CAC6C6}
+#anh{height: 100px; background: #fff}
+#footer1{height: 150px; background: #fff}
+#class1{width: 250px; height:150px;float: left;margin: 0px 22px; text-align: center; padding: 20px}
+#class2{width: 250px; height:150px;float: left; margin: 0px 22px; text-align: center; padding: 20px;}
+#class3{width: 270px; height:150px;float: left;margin: 0px 22px; text-align: center;}
+#class4{width: 250px; height:150px;float: left; ;margin: 0px 22px; text-align: center; padding: 20px 0;}
+#form{height: 30px; width: 210px; float: left; margin: 30px 0}
+button{height: 30px; width: 60px; background: black; color: #fff; border: none; margin: 30px 0; float: left;}
+#chu{width: 250px; height: 40px; padding: 30px 0;}
+

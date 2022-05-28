@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<link rel="stylesheet" href="lienhe.css">
+<body>
+	<div id="all">
+	<div id="logo">
+			<img src="image/download.png" height="100%" width="20%">
+		</div>
+		<nav>
+			<ul>
+			<li><a href="assignment.html">Trang Chủ</a></li>
+				<li><a href="giaynam.html">Giày Nam</a></li>
+				<li><a href="">Giày Nữ</a></li>
+				<li><a href="Chitiet.html">Khuyến Mãi</a></li>
+				<li><a href="">Liên Hệ</a></li>
+				<li><a href="giohang.html">Giỏ Hàng</a></li>
+			</ul>
+		</nav>
+		  <div id="slider">
+			 
+			  <img src="image/12.jpg" width="100%" height="100%">
+			 
+				<a href="#" class="pre"></a>
+	       <a href="#" class="next"></a>
+		  </div>
+		<nav id="sli">
+	<nav class="slide1">
+		<section id="title">
+		<h2> Thêm Vào Giỏ Hàng</h2>
+	</section>
+		     <br><br>  <label>Họ và Tên *</label><input type="text"><br><br>
+		        <label>Địa chỉ *</label><input type="text"><br><br>
+		        <label>Điện thoại *</label><input type="text"><br><br>
+		        <label>Email *</label><input type="text"><br><br>
+		        <label>Mã số SP</label><input type="text"><br><br>
+		        <label>Tải lên ảnh sản phẩm * </label><input type="file" name="anh"><br><br>
+		        <label>Ghi chú * (nếu có)<br></label><textarea style="width: 60%"></textarea><br><br>		
+<input id="button" type="submit"style="width: 100px; background: black; color: white; border: 1px solid black; ">
+  		
+	</nav>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<section id="slide2">
+	<section id="title">
+		<h2> Các sản phẩm được khách hàng yêu thích</h2>
+	</section>
+	<section class="slider">
+		<ul>
+			<li class="slide ">
+				<img class="animation" src="image/o.jpg">
+			</li>
+			<li class="slide ">
+				<img class="animation" src="image/n.jpg">
+			</li>
+			<li class="slide">
+				<img class="animation" src="image/k.jpg">
+			</li>
+		</ul>
+	</section>
+</section>
+	<script type="text/javascript">
+		var slide = document.getElementsByClassName('slide');
+		var index = 0;
+		function currentShow() {
+			slide[0].style.display = "block";
+		}
+		currentShow();
+		function next(){
+			//an het cac slide
+			for(var i = 0; i< slide.length; i++){
+				slide[i].style.display = "none";
+			}
+			//kiem tr xem index co vuot qua so anh khong
+			if (index >= slide.length){
+			index = 0;
+			}
+			//hien thi hinh anh hien tai
+			slide[index].style.display = "block";
+			//anh tiep theo
+			index++;
+		}
+		//chay tu dong
+		var t = setInterval(function(){next()}, 2000);
+	</script>
+
+	</nav>
+		
+		
+	
+	<footer>
+			  <div id="anh">
+			<img src="image/Capture.PNG" width="100%">
+			</div>
+		  <div id="footer1">
+			<div id="class1">
+				<h2>Gọi Mua Hàng</h2>
+				<h1>1800 1162</h1>
+				<p>Tất cả các ngày trong tuần</p>	
+				</div>
+			<div id="class2">
+				<h2>Góp Ý, Khiếu Nại</h2>
+					<h1>1800 1160</h1>
+					<p>Tất cả các ngày trong tuần, trừ ngày lễ</p>
+				</div>
+				<div id="class3">
+				  <h2 id="chu">Đăng Ký Nhận Thông Tin</h2>
+<input id="form" type="email" value="Nhập email của bạn tại đây">
+					<button onClick="">Đăng Ký</button>
+			  </div>
+			  <div id="class4">
+				<h2>Qua Mạng Xã Hội</h2><br>
+					<img src="image/Capture1.PNG">
+					</div>
+		  </div>
+			  </footer>	
+	</div>
+</body>
+
+</html>

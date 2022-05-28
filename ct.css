@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0px; padding: 0px; box-sizing: border-box}
+#all{width: 1200px; margin: auto;}
+#logo{height: 100px; background: black; text-align: center; }
+nav{height: 60px; background: rgba(80,80,80,1);}
+nav ul{list-style-type: none; text-align: center;}
+nav li{display: inline-block; width: 100px; line-height: 60px}
+nav a{text-decoration: none; font-size: 19px; color: #fff; display: block;}
+nav a:hover{background: #f1f1f1; color: #333;}
+#slider{height: 250px; width: 1200px; display: inline-block;overflow: hidden;position: relative;}
+#mainer{width: 1200px; height: 600px; margin: auto; background: #eeeeee}
+#mleft{width: 600px; height: 600px; float: left}
+#mright{
+    float: left;
+    width: 600px;
+    height: 600px;
+    padding-left: 50px;
+	background: #fff;
+}
+#mright p{
+    font-size: 30px;
+    text-align: center;
+    padding-left: 40px;
+    line-height: 50px;
+}
+.gia{
+    color: red;
+    text-decoration: line-through;
+}
+#mright form{
+    padding-left: 10px;
+    padding-top: 50px;
+}
+#mright input{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+#mright input:hover{
+    color: #003399;
+    background: #eeeeee;
+}
+
+footer{height: 141px; background: #CAC6C6}
+#anh{height: 100px; background: #fff}
+#footer1{height: 150px; background: #fff}
+#class1{width: 250px; height:150px;float: left;margin: 0px 22px; text-align: center; padding: 20px}
+#class2{width: 250px; height:150px;float: left; margin: 0px 22px; text-align: center; padding: 20px;}
+#class3{width: 270px; height:150px;float: left;margin: 0px 22px; text-align: center;}
+#class4{width: 250px; height:150px;float: left; ;margin: 0px 22px; text-align: center; padding: 20px 0;}
+#form{height: 30px; width: 210px; float: left; margin: 30px 0}
+button{height: 30px; width: 60px; background: black; color: #fff; border: none; margin: 30px 0; float: left;}
+#chu{width: 250px; height: 40px; padding: 30px 0;}
+
